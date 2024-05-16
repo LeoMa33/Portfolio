@@ -6,9 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview",
-    "git": "npm run build && git add . && git commit -m",
-    "postgit": "git push && git subtree push --prefix dist origin gh-pages"
+    "preview": "vite preview"
   },
   "dependencies": {
     "vue": "^3.4.21"

@@ -1,17 +1,16 @@
 <template>
     <nav>
-        <a :class="{current:currentPage == 'Portfolio'}" v-on:click="currentPage='Portfolio'">Portfolio</a>
-        <a :class="{current:currentPage == 'Expériences'}" v-on:click="currentPage='Expériences'">Expériences</a>
-        <a :class="{current:currentPage == 'Réalisations'}" v-on:click="currentPage='Réalisations'">Réalisations</a>
-        <a :class="{current:currentPage == 'Contact'}" v-on:click="currentPage='Contact'">Contact</a>
+        <a :class="{current:props.currentPage == 'Portfolio'}" @click="emit('changePage', 'Portfolio')">Portfolio</a>
+        <a :class="{current:props.currentPage == 'Expériences'}" @click="emit('changePage', 'Expériences')">Expériences</a>
+        <a :class="{current:props.currentPage == 'Réalisations'}" @click="emit('changePage', 'Réalisations')">Réalisations</a>
+        <a :class="{current:props.currentPage == 'Contact'}" @click="emit('changePage', 'Contact')">Contact</a>
     </nav>
 </template>
 
 <script setup lang="ts">
 
-import {ref} from 'vue';
-
-const currentPage = ref("Portfolio");
+const props = defineProps(['currentPage']);
+const emit = defineEmits(['changePage'])
 
 </script>
 
@@ -27,13 +26,15 @@ nav {
     height: 12.5dvh;
   }
 a {
-    color: #737373;
+    color: var(--medium);
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
+    cursor: pointer;
+    user-select: none;
 }
 .current {
-    color: #C9C9C9;
+    color: var(--light);
 }
 
 </style>

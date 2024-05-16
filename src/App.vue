@@ -1,17 +1,29 @@
 
 
 <template>
-  <Header></Header>
-  <ProfilBanner></ProfilBanner>
-  <ScrollerButton></ScrollerButton>
-  <SectionTitle></SectionTitle>
+  <Header :current-page="currentPage" @change-page="changePage"></Header>
+  <HomePage v-if="currentPage == 'Portfolio'"/>
+  <ExperiencePage v-if="currentPage == 'Expériences'"/>
+  <RealisationPage v-if="currentPage == 'Réalisations'"/>
+  <ContactPage v-if="currentPage == 'Contact'"/>
+  <div style="height: 10dvh;"></div>
 </template>
 
 <script setup lang="ts">
 import Header from './components/Header.vue'
-import ProfilBanner from './components/ProfilBanner.vue'
-import ScrollerButton from './components/ScrollerButton.vue'
-import SectionTitle from './components/SectionTitle.vue'
+import HomePage from './pages/HomePage.vue'
+import RealisationPage from './pages/RealisationPage.vue';
+import ExperiencePage from './pages/ExperiencePage.vue';
+import ContactPage from './pages/ContactPage.vue';
+
+import {ref} from 'vue';
+
+const currentPage = ref("Portfolio");
+const changePage = (page:any)=>{
+  currentPage.value = page
+}
+
+
 </script>
 
 <style scoped>

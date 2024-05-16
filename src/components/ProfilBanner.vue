@@ -18,16 +18,17 @@ div {
     align-items: center;
     justify-content: center;
     height: 75dvh;
+    background-color: #F9F9F9;
 }
 h1 {
-    color: #C9C9C9;
+    color:  var(--light);
     font-size: 96px;
 }
 span {
-    color: #737373;
+    color: var(--medium);
 }
 h2 {
-    color: #C9C9C9;
+    color:  var(--light);
     font-size: 20px;
 }
 </style>

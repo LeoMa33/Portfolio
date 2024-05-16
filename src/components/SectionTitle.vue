@@ -1,13 +1,11 @@
 <template>
     <div>
-        <h2>{{ title }}</h2>
+        <h2>{{ props.title }}</h2>
     </div>
 </template>
 
 <script setup lang="ts">
-
-const title = "MON PARCOURT"
-
+const props = defineProps(['title'])
 </script>
 
 
@@ -18,6 +16,11 @@ div {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 12.5dvh;
+    height: 15dvh;
+}
+h2 {
+    color: #00B578;
+    font-size: 30px;
+    font-weight: bold;
 }
 </style>
