@@ -4,3 +4,4 @@ services:
     image: portfolio
     ports:
       - 80:80
+    restart: always
