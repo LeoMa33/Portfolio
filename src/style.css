@@ -15,10 +15,12 @@
 
   --light: #C9C9C9;
   --medium: #737373;
+  --primary: #00B578;
 
 }
 
 * {
   padding: 0px;
   margin: 0px;
+  list-style: none;
 }

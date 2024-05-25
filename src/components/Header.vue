@@ -18,15 +18,20 @@ const emit = defineEmits(['changePage'])
 
 <style scoped>
 nav {
+    
+    position: absolute;
+    z-index: 2;
     display: flex;
     flex-direction: row;
     gap: 20px;
     justify-content: center;
     align-items: center;
-    height: 12.5dvh;
+    height: 10dvh;
+    width: 100%;
   }
 a {
     color: var(--medium);
+    color: var(--light);
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -34,7 +39,7 @@ a {
     user-select: none;
 }
 .current {
-    color: var(--light);
+    color: var(--primary);
 }
 
 </style>

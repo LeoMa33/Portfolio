@@ -7,7 +7,7 @@
             </div>
             <div class="info">
                 <h1>Développement Logiciel</h1>
-                <p>desc</p>
+                <!--<p>desc</p>-->
             </div>
         </div>
         <div class="domaine">
@@ -16,7 +16,7 @@
             </div>
             <div class="info">
                 <h1>Développement Mobile</h1>
-                <p>desc</p>
+                <!--<p>desc</p>-->
             </div>
         </div>
         <div class="domaine">
@@ -25,7 +25,7 @@
             </div>
             <div class="info">
                 <h1>Développement IOT</h1>
-                <p>desc</p>
+                <!--<p>desc</p>-->
             </div>
         </div>
     </div>

@@ -23,16 +23,22 @@ const getIsDivideIndexProjects = (projects:ProjectType[], divideResult:number)=>
 
 const projects:ProjectType[] = [{
   title:"Easfert",
-  imgPath:"/Frame10.png",
-  domaine:"Application Mobile"
+  imgPath:"/projects/Easfert.png",
+  domaine:"Application Mobile",
+  technologie:["Xamarin", "Bluetooth Low Energie"],
+  shortDescription:"Application de transfert de données via Bluetooth Low Energy.",
 },{
-  title:"Unknown",
-  imgPath:"none",
-  domaine:""
+  title:"Inventory Manager",
+  imgPath:"/projects/InventoryManager.png",
+  domaine:"Application Mobile",
+  technologie:["React Native"],
+  shortDescription:"Application de gestion de stock pouvant scanner des codes bar afin d'identifier un article.",
 },{
-  title:"Unknown",
-  imgPath:"none",
-  domaine:""
+  title:"Xamarin GridView",
+  imgPath:"/projects/GridView.png",
+  domaine:"Composant",
+  technologie:["Xamarin", "Composant"],
+  shortDescription:"Composant Xamarin permettant l'organisation d'éléments en grille.",
 }]
 
 </script>
@@ -59,22 +65,4 @@ const projects:ProjectType[] = [{
   gap: 8dvh;
 }
 
-a {
-  display: flex;
-  flex-direction: column;
-  width: 30dvw;
-  gap: 3dvh;
-  aspect-ratio: 1/1;
-}
-
-a h2 {
-  color: var(--medium);
-  font-weight: 500;
-}
-
-a img {
-  background-color: #F9F9F9;
-  flex: 1;
-  border-radius: 10px;
-}
 </style>

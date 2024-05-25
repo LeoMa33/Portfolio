@@ -7,10 +7,12 @@
   <RealisationPage v-if="currentPage == 'Réalisations'"/>
   <ContactPage v-if="currentPage == 'Contact'"/>
   <div style="height: 10dvh;"></div>
+  <Footer></Footer>
 </template>
 
 <script setup lang="ts">
 import Header from './components/Header.vue'
+import Footer from './components/Footer.vue';
 import HomePage from './pages/HomePage.vue'
 import RealisationPage from './pages/RealisationPage.vue';
 import ExperiencePage from './pages/ExperiencePage.vue';
