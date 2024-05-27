@@ -4,13 +4,11 @@
             <h2>SoftSkills</h2>
             <div class="content">
                 <ul class="part">
-                    <li class="select"><h3>Title</h3></li>
-                    <li><h3>Title</h3></li>
-                    <li><h3>Title</h3></li>
+                    <li :class="{select:currentSkill==idx}" v-for="sk, idx in softskills" v-on:click="currentSkill = idx"><h3>{{ sk.title }}</h3></li>
                 </ul>
                 <div class="part desc">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, possimus? Expedita quidem, aspernatur cupiditate a voluptas id molestiae tempore odio error, exercitationem iusto sint dolorem! Voluptatibus magni consectetur et consequatur!</p>
+                    <h3>{{ softskills[currentSkill].title }}</h3>
+                    <p>{{ softskills[currentSkill].desc }}</p>
                 </div>
             </div>
         </div>
@@ -18,6 +16,18 @@
 </template>
 
 <script setup lang="ts">
+
+
+import {ref} from 'vue';
+
+const currentSkill = ref(0);
+
+const softskills:SoftSkillsType[] = [
+    {title:"Autodidact", desc:"Je suis autodidacte avec une soif d'apprendre et une grande curiosité. C'est cette curiosité qui m'a conduit à la programmation. J'ai appris par moi-même, explorant différents langages et technologies, et développant des compétences en résolution de problèmes de manière indépendante et créative. Mon parcours reflète mon engagement envers l'apprentissage continu et ma passion pour la découverte."},
+    {title:"Créatif", desc:"Je suis une personne créative, capable de voir les choses sous différents angles et de trouver des solutions innovantes. Dans la programmation et d'autres domaines, j'aime expérimenter et sortir des sentiers battus. Cela me permet de proposer des solutions originales et d'apporter une touche personnelle à mes projets."},
+    {title:"Adaptivité", desc:"Je suis très adaptable et capable de m'ajuster rapidement à de nouvelles situations. Que ce soit dans la programmation ou dans d'autres domaines, j'apprends vite et m'adapte aux changements avec aisance. Cette flexibilité me permet de relever des défis variés et de toujours trouver des solutions appropriées aux problèmes rencontrés."}
+]
+
 
 </script>
 
@@ -77,6 +87,7 @@ li {
     display: flex;
     flex-direction: row;
     align-items: center;
+    cursor: pointer;
 }
 
 .select {
