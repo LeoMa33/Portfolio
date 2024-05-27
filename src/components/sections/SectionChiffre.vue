@@ -11,7 +11,7 @@
                 <p>Années d'expériences</p>
             </div>
             <div class="chiffre">
-                <h2>20</h2>
+                <h2>+35</h2>
                 <p>Technologies</p>
             </div>
         </div>
