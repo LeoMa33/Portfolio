@@ -6,7 +6,9 @@
                 <h2>Qui suis je ?</h2>
             </div>
             <div class="content right">
-                <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du.</p>
+                <p>Je m'appelle MACE Léo et je suis actuellement étudiant en deuxième année à Ynov Bordeaux, spécialisé en informatique. Mon intérêt pour l'informatique a commencé en 2017 lorsque j'ai débuté en autodidacte avec de petits projets personnels. Rapidement, j'ai développé une passion pour le développement d'applications mobiles, ce qui m'a amené à approfondir mes connaissances et mes compétences dans ce domaine.
+Pour concrétiser cette passion, j'ai décidé d'intégrer Ynov Bordeaux, où j'ai la possibilité de développer davantage mes compétences techniques tout en bénéficiant d'un encadrement et de ressources de qualité.
+En parallèle de mes études, je continue à travailler sur des projets personnels et collaboratifs, ce qui me permet de rester à jour avec les dernières technologies et tendances du secteur. Je suis toujours à la recherche de nouvelles opportunités pour apprendre et grandir dans ce domaine passionnant.</p>
             </div>
         </div>
     </section>
@@ -36,7 +38,7 @@ section {
 }
 
 .right {
-    flex: 3;
+    flex: 4;
 }
 
 h2 {

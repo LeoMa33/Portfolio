@@ -1,13 +1,15 @@
 
 
 <template>
-  <Header :current-page="currentPage" @change-page="changePage"></Header>
-  <HomePage v-if="currentPage == 'Portfolio'"/>
-  <ExperiencePage v-if="currentPage == 'Expériences'"/>
-  <RealisationPage v-if="currentPage == 'Réalisations'"/>
-  <ContactPage v-if="currentPage == 'Contact'"/>
-  <div style="height: 10dvh;"></div>
-  <Footer></Footer>
+  <div class="container">
+    <Header :current-page="currentPage" @change-page="changePage"></Header>
+    <HomePage v-if="currentPage == 'Portfolio'"/>
+    <ExperiencePage v-if="currentPage == 'Expériences'"/>
+    <RealisationPage v-if="currentPage == 'Réalisations'"/>
+    <ContactPage v-if="currentPage == 'Contact'"/>
+    <div style="height: 10dvh;"></div>
+    <Footer></Footer>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -29,4 +31,10 @@ const changePage = (page:any)=>{
 </script>
 
 <style scoped>
+
+.container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 </style>

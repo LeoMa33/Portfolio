@@ -1,4 +1,5 @@
 <template>
+  <TextualBanner title="RÉALISATIONS" subtitle="Les connaissances sont inutiles si elles ne sont pas mises en pratique."></TextualBanner>
   <div class="content">
     <div class="left">
       <Project v-for="prj in getIsDivideIndexProjects(projects,0)" :project="prj"/>
@@ -12,6 +13,7 @@
 <script setup lang="ts">
 //import { ref } from 'vue';
 import Project from '../components/Project.vue'
+import TextualBanner from '../components/TextualBanner.vue'
 
 /*const project = ref<ProjectType>({
   title:"test"
@@ -49,6 +51,7 @@ const projects:ProjectType[] = [{
   display: flex;
   flex-direction: row;
   gap: 8dvh;
+  margin-top: 10dvh;
   justify-content: center;
   width: 100dvw;
 }
