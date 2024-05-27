@@ -36,7 +36,7 @@ input {
     color: black;
     border-bottom-style: solid;
     border-bottom-width: 3px;
-    border-bottom-color: var(--light);
+    border-bottom-color: var(--medium);
 }
 
 input::placeholder {
@@ -63,7 +63,7 @@ textarea {
     color: black;
     border-bottom-style: solid;
     border-bottom-width: 3px;
-    border-bottom-color: var(--light);
+    border-bottom-color: var(--medium);
     resize: none;
     flex-grow: 1;
 }
