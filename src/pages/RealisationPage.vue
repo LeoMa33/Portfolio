@@ -41,6 +41,18 @@ const projects:ProjectType[] = [{
   domaine:"Composant",
   technologie:["Xamarin", "Composant"],
   shortDescription:"Composant Xamarin permettant l'organisation d'éléments en grille.",
+},{
+  title:"IHM Balistique",
+  imgPath:"/projects/ihmbalistique.png",
+  domaine:"Interface Homme-Machine",
+  technologie:["Qt", "C++", "C#", "Unity", "TCP/IP"],
+  shortDescription:"Interface Homme-Machine permettant de simuler un tir balistique dans un environnement simulant le vent et la gravité. Celle-ci permet aussi la prédiction des coordonnées d'impact.",
+},{
+  title:"Weap",
+  imgPath:"/projects/Weap.png",
+  domaine:"Logiciel",
+  technologie:["Avalonia", "C#"],
+  shortDescription:"Weap est un logiciel météo sur lequel il est possible de rechercher un ville pour voir les prévision météorologique sur 5 jours du lieu souhaité. Ce logiciel utilise l'API d'OpenWeather pour fonctionner.",
 }]
 
 </script>

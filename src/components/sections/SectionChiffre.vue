@@ -3,7 +3,7 @@
         <SectionTitle :title="title"></SectionTitle>
         <div class="container">
             <div class="chiffre">
-                <h2>30</h2>
+                <h2>+27</h2>
                 <p>Projets</p>
             </div>
             <div class="chiffre">
