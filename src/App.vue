@@ -7,6 +7,7 @@
     <ExperiencePage v-if="currentPage == 'Expériences'"/>
     <RealisationPage v-if="currentPage == 'Réalisations'"/>
     <ContactPage v-if="currentPage == 'Contact'"/>
+    <FloatingDiv @change-page="changePage"></FloatingDiv>
     <div style="height: 10dvh;"></div>
     <Footer></Footer>
   </div>
@@ -15,6 +16,7 @@
 <script setup lang="ts">
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue';
+import FloatingDiv from './components/FloatingDiv.vue';
 import HomePage from './pages/HomePage.vue'
 import RealisationPage from './pages/RealisationPage.vue';
 import ExperiencePage from './pages/ExperiencePage.vue';
