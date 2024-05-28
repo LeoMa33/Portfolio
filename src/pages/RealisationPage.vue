@@ -52,7 +52,7 @@ const projects:ProjectType[] = [{
   imgPath:"/projects/Weap.png",
   domaine:"Logiciel",
   technologie:["Avalonia", "C#"],
-  shortDescription:"Weap est un logiciel météo sur lequel il est possible de rechercher un ville pour voir les prévision météorologique sur 5 jours du lieu souhaité. Ce logiciel utilise l'API d'OpenWeather pour fonctionner.",
+  shortDescription:"Weap est un logiciel météo sur lequel il est possible de rechercher une ville pour voir les prévision météorologique sur 5 jours du lieu souhaité. Ce logiciel utilise l'API d'OpenWeather pour fonctionner.",
 }]
 
 </script>
