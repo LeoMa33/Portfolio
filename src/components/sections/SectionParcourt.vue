@@ -31,6 +31,7 @@ section {
     display: flex;
     flex-direction: row;
     width: 60dvw;
+    flex-wrap: wrap;
 }
 
 .content {
@@ -39,18 +40,34 @@ section {
 
 .right {
     flex: 4;
+    min-width: 500px;
 }
 
 h2 {
     font-weight: 500;
     color: var(--medium);
     font-size: 30px;
+    min-width: 165px;
 }
 
 p {
-    margin-left: 12dvw;
-    max-width: 50dvw;
+    max-width: 70dvw;
+    margin-top: 20px;
     color: var(--medium);
     font-size: 20px;
 }
+
+@media (min-width: 1350px){
+
+    p {
+        margin-left: 12dvw;
+        margin-top: 0px;
+        max-width: 50dvw;
+        color: var(--medium);
+        font-size: 20px;
+    }
+
+}
+
+
 </style>

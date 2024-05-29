@@ -14,6 +14,7 @@ const props = defineProps(['link', 'icon', 'text']);
 img {
     aspect-ratio: 1/1;
     width: 2dvw;
+    min-width: 30px;
 }
 
 a {

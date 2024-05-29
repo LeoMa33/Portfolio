@@ -40,16 +40,17 @@ const title = "MES DOMAINES"
 .list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 5dvw;
 }
 .domaine {
     display: flex;
     flex-direction: column;
-    /*background-color: #c9c9c91e;*/
     background-color: #00b5790e;
     aspect-ratio: 3/4;
     width: 12dvw;
+    min-width: 200px;
     align-items: center;
     padding: 20px;
     border-radius: 20px;

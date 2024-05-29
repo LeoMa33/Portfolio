@@ -35,15 +35,22 @@ section {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     width: 60dvw;
     height: 40dvh;
     gap: 10dvw;
 }
 
-.container .chiffre:nth-child(2){
-    margin-bottom: 100px;
+
+@media (min-width: 750px){
+
+    .container .chiffre:nth-child(2){
+        margin-bottom: 100px;
+    }
+
 }
+
 
 .chiffre {
     display: flex;

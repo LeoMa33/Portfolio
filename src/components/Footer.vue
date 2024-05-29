@@ -40,11 +40,6 @@ import IconTexteHover from './IconTexteHover.vue'
     flex-grow: 1;
 }
 
-li img {
-    aspect-ratio: 1/1;
-    width: 2dvw;
-}
-
 .footer p {
     color: var(--light);
 }
