@@ -38,6 +38,8 @@ h1 {
     color:  var(--light);
     font-size: 60px;
     z-index: 2;
+    max-width: 90dvw;
+    text-align: center;
 }
 
 h2 {
@@ -45,5 +47,7 @@ h2 {
     font-size: 20px;
     z-index: 2;
     text-transform: uppercase;
+    text-align: center;
+    max-width: 90dvw;
 }
 </style>

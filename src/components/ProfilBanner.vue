@@ -36,6 +36,8 @@ h1 {
     color:  var(--light);
     font-size: 96px;
     z-index: 2;
+    max-width: 90dvw;
+    text-align: center;
 }
 span {
     color: var(--primary);
