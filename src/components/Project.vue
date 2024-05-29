@@ -40,6 +40,8 @@ a h2 {
 
 a .container {
     position: relative;
+    min-width: 300px;
+    min-height: 300px;
     flex: 1;
     aspect-ratio: 1/1;
 }

@@ -59,25 +59,43 @@ const projects:ProjectType[] = [{
 
 <style scoped>
 
+
 .content {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10dvh;
+}
+
+
+@media (min-width:1250px){
+  .content {
+  display: flex;
   flex-direction: row;
+  flex-wrap: wrap-reverse;
   gap: 8dvh;
   margin-top: 10dvh;
   justify-content: center;
+  align-items: center;
   width: 100dvw;
 }
+}
+
+
 
 .left{
   display: flex;
   flex-direction: column;
   gap: 8dvh;
+  min-width: 300px;
 }
+
 .right{
   display: flex;
   flex-direction: column;
   margin-top: 10dvh;
   gap: 8dvh;
+  min-width: 300px;
 }
 
 </style>
