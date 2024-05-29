@@ -64,6 +64,7 @@ h2 {
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .part {
@@ -109,6 +110,19 @@ li {
 .desc p {
     font-size: 20px;
     color: var(--medium);
+    min-width: 300px;
+}
+
+@media (max-width: 700px){
+    .container {
+        width: calc(80dvw - 80px);
+    }
+    .desc p {
+        font-size: 20px;
+        color: var(--medium);
+        min-width: 200px;
+    }
+
 }
 
 </style>
