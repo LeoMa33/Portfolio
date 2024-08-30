@@ -1,10 +1,13 @@
 <template>
-    <nav ref="nav">
+    <nav ref="nav" v-if="props.currentPage != 'Article'">
         <a :class="{current:props.currentPage == 'Portfolio'}" @click="emit('changePage', 'Portfolio')">Portfolio</a>
         <a :class="{current:props.currentPage == 'Expériences'}" @click="emit('changePage', 'Expériences')">Expériences</a>
         <a :class="{current:props.currentPage == 'Réalisations'}" @click="emit('changePage', 'Réalisations')">Réalisations</a>
         <a :class="{current:props.currentPage == 'Contact'}" @click="emit('changePage', 'Contact')">Contact</a>
         <a @click="showMenu" class="icon"><img ref="icon" :src="iconPath" alt=""></a>
+    </nav>
+    <nav class="al" ref="nav" v-if="props.currentPage == 'Article'">
+        <a @click="emit('changePage', 'Portfolio')" class="iconArticle"><img ref="icon" src="/icons8home.svg" alt=""></a>
     </nav>
 </template>
 
@@ -45,6 +48,13 @@ nav {
     height: 10dvh;
     width: 100%;
   }
+
+  .al {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+
 a {
     color: var(--medium);
     color: var(--light);
@@ -56,6 +66,15 @@ a {
 }
 .current {
     color: var(--primary);
+}
+
+a.iconArticle {
+    height: 35px;
+    margin-left: 3dvw;
+    aspect-ratio: 1/1;
+}
+a.iconArticle img {
+    width: 100%;
 }
 
 a.icon {

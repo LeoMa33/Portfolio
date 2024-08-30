@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img src="/Untitled00180002.png" alt="">
+        <img :src="image" alt="" :class="{ cover : props.image }">
         <h1>{{ props.title }}</h1>
         <h2>{{ props.subtitle }}</h2>
     </div>
@@ -8,7 +8,9 @@
 
 <script setup lang="ts">
 
-const props = defineProps(["title", "subtitle"]);
+const props = defineProps(["title", "subtitle", "image"]);
+
+const image = props.image ? props.image : "/Untitled00180002.png"
 
 </script>
 
@@ -40,6 +42,7 @@ h1 {
     z-index: 2;
     max-width: 90dvw;
     text-align: center;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -50,4 +53,10 @@ h2 {
     text-align: center;
     max-width: 90dvw;
 }
+
+.cover {
+    width: 100dvw;
+    top: 0;
+}
+
 </style>
